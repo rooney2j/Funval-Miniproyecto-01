@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Miniproyecto</title>
+
+  <!-- CSS -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media_queries.css">
+
+  <!-- JS -->
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Main -->
+  <main>
+    <h1 class="hidden">Newsletter Sign-up Form</h1>
+
+    <!-- Inicio de formulario -->
+    <div class="card sign-up-card">
+      <img class="sign-up-img" src="./images/illustration-sign-up-mobile.svg" alt="" />
+      <div class="sign-up-text">
+        <h2>Stay updated!</h2>
+
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="sign-up-list">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+
+        <form class="sign-up-form">
+          <label for="email">Email address</label>
+          <input id="email" type="email" placeholder="email@company.com" />
+          <span class="error-message">Valid email required</span>
+
+          <button class="btn submit-btn">
+            Subscribe to monthly newsletter
+          </button>
+
+        </form>
+      </div>
+    </div>
+    <!-- Fin de formulario -->
+
+    <!-- Inicio de mensaje de éxito en suscripción -->
+    <div class="card success-card hidden">
+      <img src="./images/icon-success.svg" alt="Imagen de envío exitoso" />
+      <h2>Thanks for subscribing!</h2>
+
+      <p>
+        A confirmation email has been sent to
+        <span class="submitted-email">uncorreo@correo.com</span>. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+
+      <button class="btn dismiss-btn">Dismiss message</button>
+    </div>
+    <!-- Fin de mensaje de éxito en suscripción -->
+
+  </main>
+
+</body>
+
+</html>
